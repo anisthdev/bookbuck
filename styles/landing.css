@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html, body{
     font-family: 'Open Sans';
     color: #848484;
@@ -13,10 +14,11 @@ section{
     margin-bottom: 30px;
 }
 
- .section-heading{
+.section-heading {
     padding-top: 50px;
 }
-p{
+
+p {
     text-align: center;
 }
 
@@ -40,7 +42,7 @@ h2 {
     color: #7e7e7e;
 }
 
-h2:after{
+h2:after {
     content: "";
     display: block;
     height: 2px;
@@ -55,15 +57,8 @@ h4 {
     text-transform: uppercase;
 }
 
-
-
 .space_around{
     justify-content: space-around;
-}
-
-.col{
-    width: 22%;
-/*    min-width: 17%;*/
 }
 
 .section-desc{
@@ -78,10 +73,10 @@ h4 {
 }
 
 .row{
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    
+    justify-content: center;   
 }
 
 .container{
@@ -89,36 +84,32 @@ h4 {
     margin: 0 auto;
 }
 
-.btn-primary {
+.btn{
     display: inline-block;
     text-decoration: none;
     margin-right: 30px;
     padding: 10px 0;
     width: 10rem;
     text-align: center;
+    transition: background-color 2s #ff5555;
+}
+
+.btn-primary {
     color: #ff5555;
     background-color: #fff;
-    border: 2px dashed rgba(0, 0, 0, 0);
-    transition: background-color 0.2s ease-out, border 0.2s ease-in;
+    border: 2px solid #fff;
 }
 
 .btn-primary-outline {
-    display: inline-block;
-    text-decoration: none;
-    margin-right: 30px;
-    padding: 10px 0;
-    width: 10rem;
-    text-align: center;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0);
-    border: 2px dashed #fff;   
-    transition: background-color 0.2s ease-out, border 0.2s ease-in;
+    background-color: transparent;
+    border: 2px dashed #fff;
 }
 
-.btn-primary:hover, .btn-primary:active{
+.btn-primary:hover, .btn-primary:active {
     color: #fff;
     background-color: rgba(0, 0, 0, 0);
-    border: 2px dashed #fff;   
+    border: 2px dashed #fff; 
 }
 
 .btn-primary-outline:hover, .btn-primary-outline:active{
@@ -131,7 +122,7 @@ h4 {
 
 
 .header-banner{
-    height: 600px;;
+    height: 100vh;
     position: relative;
     clear: both;
     background-color: #ff5555;
@@ -142,7 +133,7 @@ h4 {
     max-width: 90%;
     position: absolute;
     left: 120px;
-    top: 150px;
+    top: 75px;
 }
 
 /*---------Features Section---------*/
@@ -160,13 +151,12 @@ h4 {
     text-align: center;
     margin: 20px 15px;
     padding: 25px 0;
-/*    box-shadow: 0 2px 5px #a3a3a3;*/
+    box-shadow: 0px 2px 5px #a3a3a3;
     border: 2px dashed #5d75ff;
 }
 
 .infobox-heading {
-    padding: 20px 10px 10px 10px;
-    
+    padding: 20px 10px 10px 10px; 
 }
 
 .infobox-desc {
@@ -174,7 +164,9 @@ h4 {
     letter-spacing: 0.5px;
     padding: 15px;
     line-height: 1.7;
-    margin-bottom: 20px;
+    margin: 20px 0;
+    font-weight: 500;
+    /* font-style: italic; */
 }
 
 /*---------Works Section---------*/
